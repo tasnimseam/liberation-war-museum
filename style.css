@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}           
+.my-custom-nav{
+    background-image:linear-gradient( to right, rgba(211, 1, 1, 0.319),rgba(25, 156, 5, 0.254)); ;
+}
+.navbar-1{
+    gap: 50px;
+}
+.navlinks{
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.8s;
+    box-shadow: inset 5px 5px 10px #a4090977, inset -5px -5px 10px #32a71b7e
+}
+
+.War-Section{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(./src/card-image/LiberationWarmuseum\ .jpg);
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.war-text{
+    margin-left: 50px;
+    flex: 2;
+    background-image: linear-gradient(to left ,rgba(255, 0, 0, 0.413),rgba(0, 128, 0, 0.427));
+    border-radius: 10px;
+    padding: 30px 0px;
+    color: antiquewhite;
+    font-size: 15px; 
+    min-width: 300px;
+    box-shadow: inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #8688e17e
+}
+
+.img-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Documents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+.audio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.blogs iframe{
+    max-width: 100%;
+}
+
+
+@media (max-width: 992px) {
+    .War-Section {
+        flex-direction: column;
+    }
+    .war-text {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar-1 {
+        gap: 10px;
+    }
+
+    .navlinks {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .war-text {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 24px ;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+    
+    .navlinks {
+        width: 100%; 
+    }
+}
